@@ -6,23 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iNeuron</title>
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/858b3d16a1.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com/"></script>
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="nav-top flex">
-            <div class="nav-top-left">
+        <div class="nav-top flex lg:flex-row flex-col">
+            <div class="nav-top-left flex flex-col lg:flex-row">
                 <div class="nav-logo" >
                     <img src="./images/ineuron-logo.png" alt="logo iNeuron"  >
                 </div>
@@ -36,7 +34,7 @@
                 </div>
             </div>
             
-            <div class="nav-button">
+            <div class="nav-button mt-4 lg:mt-0">
                 <div class="signup">
                     <a href="https://account.ineuron.ai/signup?domain=ineuron.ai&redirectUrl=%2F" target="_blank">Sign Up</a>
                 </div>
@@ -46,9 +44,9 @@
             </div>
         </div>
         <div class="nav-bottom ">
-            <div class="services flex">
+            <div class="services flex flex-col lg:flex-row md:flex-row">
                 <div class="nav-courses">
-                    <a href="" target="_blank">Courses<svg
+                    <a href="https://ineuron.ai/courses" target="_blank">Courses<svg
                         stroke="currentColor"
                         fill="currentColor"
                         stroke-width="0"
@@ -67,42 +65,42 @@
                     </svg></a>
                     <div class="nav-course-list">
                         <div class="web-dev ">
-                            <a href="">Web Development <i class="fa-solid fa-xs fa-angle-right nav-dropright-icon"></i></a>
+                            <a href="https://ineuron.ai/category/WEB-DEVELOPEMENT" target="_blank">Web Development <i class="fa-solid fa-xs fa-angle-right nav-dropright-icon"></i></a>
                             <div class="web-dev-list">
-                                <a href="">Full Stack Web <br> Development</a><br>
-                                <a href="">JavaScript</a><br>
-                                <a href="">React JS</a><br>
+                                <a href="https://ineuron.ai/category/FULL-STACK-WEB-DEVELOPMENT" target="_blank">Full Stack Web <br> Development</a><br>
+                                <a href="https://ineuron.ai/category/JAVASCRIPT" target="_blank">JavaScript</a><br>
+                                <a href="https://ineuron.ai/category/REACT" target="_blank">React JS</a><br>
                             </div>
                         </div>
                         <div class="data-science">
-                            <a href="">Data Science <i class="fa-solid fa-xs fa-angle-right nav-dropright-icon"></i></a> 
+                            <a href="https://ineuron.ai/category/DATA-SCIENCE" target="_blank">Data Science <i class="fa-solid fa-xs fa-angle-right nav-dropright-icon"></i></a> 
                             <div class="data-science-list">
-                                <a href="">Full Stack <br>Data Science</a> <br>
-                                <a href="">Python</a> <br>
-                                <a href="">Python Project</a> <br>
+                                <a href="https://ineuron.ai/category/FULL-STACK-DATA-SCIENCE" target="_blank">Full Stack <br>Data Science</a> <br>
+                                <a href="https://ineuron.ai/category/PYTHON" target="_blank">Python</a> <br>
+                                <a href="https://ineuron.ai/category/PYTHON-PROJECT" target="_blank">Python Project</a> <br>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="service nav-one-neuron"><a href="">One Neuron</a></div>
-                <div class="service nav-job-portal"><a href="">Job Portal</a></div>
-                <div class="service nav-internship"><a href="">Internship Portal</a></div>
-                <div class="service nav-affiliate"><a href="">Become an Affiliate</a></div>
-                <div class="service nav-hall-of-fame"><a href="">Hall of Fame</a></div>
+                <div class="service nav-one-neuron"><a href="https://ineuron.ai/one-neuron" target="_blank">One Neuron</a></div>
+                <div class="service nav-job-portal"><a href="https://jobs.ineuron.ai/" target="_blank">Job Portal</a></div>
+                <div class="service nav-internship"><a href="https://internship.ineuron.ai/" target="_blank">Internship Portal</a></div>
+                <div class="service nav-affiliate"><a href="https://affiliate.ineuron.ai/" target="_blank">Become an Affiliate</a></div>
+                <div class="service nav-hall-of-fame"><a href="https://halloffame.ineuron.ai/" target="_blank">Hall of Fame</a></div>
                 <div class="service nav-blog"><a href="">Blog</a></div>
                 <div class="service nav-company"><a href="">Company</a>  <i class="fa-solid fa-xs fa-angle-right"></i>
                     <div class="nav-company-details">
                         <div class="company-left flex flex-col">
-                            <a href="">About Us</a>
-                            <a href="">Hack-A-Thon</a>
-                            <a href="">Job Guarantee</a>
-                            <a href="">Privacy Policy</a>
+                            <a href="https://ineuron.ai/about-us" target="_blank">About Us</a>
+                            <a href="https://hackathon.ineuron.ai/neo" target="_blank">Hack-A-Thon</a>
+                            <a href="https://ineuron.ai/job-guarantee" target="_blank">Job Guarantee</a>
+                            <a href="https://ineuron.ai/privacy-policy" target="_blank">Privacy Policy</a>
                         </div>
                         <div class="company-right flex flex-col">
-                            <a href="">Contact Us</a>
-                            <a href="">FAQs</a>
-                            <a href="">Job Assistance</a>
-                            <a href="">Terms and Conditions</a>
+                            <a href="https://ineuron.ai/contact-us" target="_blank">Contact Us</a>
+                            <a href="https://ineuron.ai/faqs" target="_blank">FAQs</a>
+                            <a href="https://ineuron.ai/job-assistance" target="_blank">Job Assistance</a>
+                            <a href="https://ineuron.ai/terms-and-conditions" target="_blank">Terms and Conditions</a>
                         </div>
                     </div>    
                 </div>
@@ -128,7 +126,7 @@
                                                     class=" text-lg lg:text-xl font-medium pt-10 lg:pt-0 text-center lg:text-start">
                                                     Learn from the best of industry
                                                 </p>
-                                                <hr class="w-32 border mb-2 mt-1" />
+                                                <hr class=" w-32 mt-1 border-1 bg-[#ea8e30] border-[#ea8e30] mb-2" />
                                                 <h1
                                                     class=" text-3xl sm:text-4xl xl:text-4xl font-semibold text-center lg:text-start">
                                                     Highest in quality, affordable in price
@@ -156,7 +154,7 @@
                                                     class=" text-lg lg:text-xl font-medium pt-10 lg:pt-0 text-center lg:text-start">
                                                     24 hours of learning, networking and jobs on the floor
                                                 </p>
-                                                <hr class="w-32 border mb-2 mt-1" />
+                                                <hr class=" w-32 mt-1 border-1 bg-[#ea8e30] border-[#ea8e30] mb-2" />
                                                 <h1
                                                     class=" text-3xl sm:text-4xl xl:text-4xl font-semibold text-center lg:text-start">
                                                     Hack-A-Thon
@@ -182,12 +180,12 @@
                                     <div class="sm:mx-auto lg:mx-0 mt-16 xl:mt-0 lg:mt-[55px] px-2 lg:px-0">
                                         <div class="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
                                             <div
-                                                class="flex flex-col items-center lg:items-start justify-center gap-y-4 w-full lg:w-[65%] lg:ml-20 xl:ml-28">
+                                                class="flex flex-col items-center lg:items-start justify-center gap-y-4 w-full lg:w-[61%] lg:ml-20 xl:ml-28">
                                                 <p
                                                     class=" text-lg lg:text-xl font-medium pt-10 lg:pt-0 text-center lg:text-left">
                                                     Our achivers works at top MNC's and startups
                                                 </p>
-                                                <hr class="w-32 border mb-2 mt-1" />
+                                                <hr class=" w-32 mt-1 border-1 bg-[#ea8e30] border-[#ea8e30] mb-2" />
                                                 <h1
                                                     class=" text-3xl sm:text-4xl xl:text-4xl font-semibold text-center lg:text-left">
                                                     Learning that makes you ready for job
@@ -244,31 +242,31 @@
 
                 <div class="swiper mySwiper partner-companies" >
                     <div class="swiper-wrapper">
-                        <img class="swiper-slide" src="./images/tataiq.png" alt="tataiq" />                    
-                        <img class="swiper-slide" src="./images/musigma.png" alt="musigma" />                    
-                        <img class="swiper-slide" src="./images/odessa.png" alt="odessa" />                    
-                        <img class="swiper-slide" src="./images/redbus.png" alt="redbus" />                    
-                        <img class="swiper-slide" src="./images/thoughtworks.png" alt="thoughtworks" />                    
-                        <img class="swiper-slide" src="./images/wellnesys.png" alt="wellnesys" />                    
-                        <img class="swiper-slide" src="./images/wipro.png" alt="wipro" />
-                        <img class="swiper-slide" src="./images/robosoft.png" alt="robosoft" />
-                        <img class="swiper-slide" src="./images/kpmg.png" alt="kpmg" />
-                        <img class="swiper-slide" src="./images/learnyst.png" alt="learnyst" />
-                        <img class="swiper-slide" src="./images/leventm.png" alt="leventem" />
-                        <img class="swiper-slide" src="./images/livspace.png" alt="livespace" />
-                        <img class="swiper-slide" src="./images/mindtree.png" alt="mindtree" />                    
-                        <img class="swiper-slide" src="./images/wissen.png" alt="wissen" />
-                        <img class="swiper-slide" src="./images/zensar.png" alt="zenstar" />
-                        <img class="swiper-slide" src="./images/cohesity.png" alt="cohesity" />
-                        <img class="swiper-slide" src="./images/eminds.png" alt="emids" />
-                        <img class="swiper-slide" src="./images/freshworks.png" alt="freshworks" />
-                        <img class="swiper-slide" src="./images/geekyants.png" alt="geekyants" />
-                        <img class="swiper-slide" src="./images/affine.png" alt="affine" />
-                        <img class="swiper-slide" src="./images/boeing.png" alt="boeing" />
-                        <img class="swiper-slide" src="./images/bun&amp;bradstreet.png" alt="dun&amp;bradsstreet" />
-                        <img class="swiper-slide" src="./images/greendeck.png" alt="greendeck" />
-                        <img class="swiper-slide" src="./images/informatica.png" alt="informatica" />
-                        <img class="swiper-slide" src="./images/innova.png" alt="innova" />
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/tataiq.png" alt="tataiq" /></div></li>                    
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/musigma.png" alt="musigma" /></div></li>                    
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/odessa.png" alt="odessa" /></div></li>                    
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/redbus.png" alt="redbus" /> </div></li>                   
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/thoughtworks.png" alt="thoughtworks" />   </div></li>                 
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/wellnesys.png" alt="wellnesys" /> </div></li>                   
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/wipro.png" alt="wipro" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/robosoft.png" alt="robosoft" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/kpmg.png" alt="kpmg" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/learnyst.png" alt="learnyst" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/leventm.png" alt="leventem" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/livspace.png" alt="livespace" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/mindtree.png" alt="mindtree" /></div></li>                    
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/wissen.png" alt="wissen" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/zensar.png" alt="zenstar" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/cohesity.png" alt="cohesity" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/eminds.png" alt="emids" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/freshworks.png" alt="freshworks" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/geekyants.png" alt="geekyants" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/affine.png" alt="affine" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/boeing.png" alt="boeing" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/bun&amp;bradstreet.png" alt="dun&amp;bradsstreet" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/greendeck.png" alt="greendeck" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/informatica.png" alt="informatica" /></div></li>
+                        <li class="swiper-slide"><div class="mt-12"><img class="lg:w-48" src="./images/innova.png" alt="innova" /></div></li>
                     </div>
                 </div>       
             </div>
@@ -277,9 +275,7 @@
         <section>
             <div class="container mx-auto max-w-7xl py-20 text-grey-100">
               <h2 class="heading text-center text-5xl font-bold text-[#233c7b] pb-9">Hall of fame</h2>
-              <div
-                class="flex items-center justify-center max-w-7xl mx-auto"
-              >
+              <div class="flex items-center justify-center max-w-7xl mx-auto" >
                 <div class="container mx-auto pb-5 relative">
                   <div class="swiper mySwiper halloffame" dir="ltr">
                     <ul
@@ -309,7 +305,7 @@
                                     <a href="https://linkedin.com/in/akb7" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -348,7 +344,7 @@
                                     <a href="https://linkedin.com/in/jayprakashbind" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -385,7 +381,7 @@
                                     <a href="https://linkedin.com/in/shrivatsa-g" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -440,7 +436,7 @@
                                     <a href="https://linkedin.com/in/sameer-kumar-20988b1a6" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -481,7 +477,7 @@
                                     <a href="https://linkedin.com/in/chitrapatgar" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -519,7 +515,7 @@
                                     <a href="https://linkedin.com/in/akb7" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -559,7 +555,7 @@
                                     <a href="https://linkedin.com/in/jayprakashbind" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -596,7 +592,7 @@
                                     <a href="https://linkedin.com/in/shrivatsa-g" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -651,7 +647,7 @@
                                     <a href="https://linkedin.com/in/sameer-kumar-20988b1a6" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -692,7 +688,7 @@
                                     <a href="https://linkedin.com/in/chitrapatgar" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -730,7 +726,7 @@
                                     <a href="https://linkedin.com/in/akb7" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -770,7 +766,7 @@
                                     <a href="https://linkedin.com/in/jayprakashbind" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -807,7 +803,7 @@
                                     <a href="https://linkedin.com/in/shrivatsa-g" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -862,7 +858,7 @@
                                     <a href="https://linkedin.com/in/sameer-kumar-20988b1a6" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -903,7 +899,7 @@
                                     <a href="https://linkedin.com/in/chitrapatgar" target="_blank" rel="noopener noreferrer">
                                         <p class="flex flex-wrap gap-1 font-semibold items-center justify-center text-lg">
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                                class="text-blue-500 w-8 h-auto" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                class="text-blue-500 w-8 h-auto hover:scale-110" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <path fill="none" d="M0 0h24v24H0z"></path>
                                                     <path fill-rule="nonzero"
@@ -922,10 +918,10 @@
                   </div>
                 </div>
               </div>
-              <div class="text-center relative z-50">
+              <div class="text-center relative ">
                 <a
                   href="https://halloffame.ineuron.ai"
-                  class="font-semibold "
+                  class="font-semibold text-lg hover:-translate-y-2 hover:scale-110"
                   >View More</a
                 >
               </div>
@@ -933,7 +929,7 @@
         </section>
 
         <section>
-            <div class="container mx-auto max-w-7xl text-inGrey-50 pt-20">
+            <div class="container mx-auto max-w-7xl pt-20">
                 <div>
                     <h2 class="heading text-center text-5xl font-bold text-[#233c7b] pb-20">
                       What you will learn
@@ -1012,9 +1008,7 @@
         
 
           <section class="live-programs">
-            <div
-              class="container mx-auto max-w-7xl text-grey-50 pt-12 pb-20"
-            >
+            <div class="container mx-auto max-w-7xl text-grey-50 pt-12 pb-20">
               <div class="flex flex-col items-center justify-center">
                 <p
                   class="text-2xl lg:text-3xl font-bold font-bold text-[#233c7b] "
@@ -1030,111 +1024,15 @@
               <div
                 class="flex flex-col items-center max-w-md md:max-w-7xl lg:max-w-7xl mx-auto"
               >
-                <div class="container mx-auto pb-20 relative">
+                <div class="container mx-auto pb-5 relative">
                   <div class="swiper mySwiper liveCoursesSwiper " dir="ltr">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
                             <div
                                 class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
                                 <div>
-                                    <img src="./images/youtubemasteryb2.jpg" alt="Amresh Bharti" class="w-full" />
-                                    <p class="text-xl font-semibold text-blue-800 line-clamp-2">
-                                        YouTube Mastery Batch 2 in Hindi
-                                    </p>
-                                </div>
-                                <div class="w-full">
-                                    <p class="-500 text-base text-left">
-                                        Amresh Bharti
-                                    </p>
-                                    <div class="flex items-center justify-between w-full">
-                                        <p class="text-lg font-semibold ">
-                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>7000.00</span>
-                                        </p>
-                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-inBlue-500  border-inBlue-600">
-                                            Live
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
-                            <div
-                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                <div>
-                                    <img src="./images/DigitalMarketing.jpg" alt="Amresh Bharti" class="w-full" />
-                                    <p class="text-xl font-semibold  line-clamp-2">
-                                        Digital Marketing Batch 2 in Hindi
-                                    </p>
-                                </div>
-                                <div class="w-full">
-                                    <p class="text-base text-left">
-                                        Amresh Bharti
-                                    </p>
-                                    <div class="flex items-center justify-between w-full">
-                                        <p class="text-lg font-semibold ">
-                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>11000.00</span>
-                                        </p>
-                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-inBlue-500  border-inBlue-600">
-                                            Live
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
-                            <div
-                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                <div>
-                                    <img src="./images/AdvanceFacebookMarketing.jpg" alt="Amresh Bharti" class="w-full" />
-                                    <p class="text-xl font-semibold  line-clamp-2">
-                                        Advance Facebook Marketing Course in Hindi
-                                    </p>
-                                </div>
-                                <div class="w-full">
-                                    <p class="text-base text-left">
-                                        Amresh Bharti
-                                    </p>
-                                    <div class="flex items-center justify-between w-full">
-                                        <p class="text-lg font-semibold ">
-                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>3000.00</span>
-                                        </p>
-                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-inBlue-500  border-inBlue-600">
-                                            Live
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
-                            <div
-                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                <div>
-                                    <img src="./images/DSAforFAANG.jpg" alt="Anurag Tiwari" class="w-full" />
-                                    <p class="text-xl font-semibold  line-clamp-2">
-                                        DSA for FAANG preparation with Python and JavaScript
-                                    </p>
-                                </div>
-                                <div class="w-full">
-                                    <p class="text-base text-left">
-                                        Anurag Tiwari
-                                    </p>
-                                    <div class="flex items-center justify-between w-full">
-                                        <p class="text-lg font-semibold ">
-                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>4000.00</span>
-                                        </p>
-                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-inBlue-500  border-inBlue-600">
-                                            Live
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
-                            <div
-                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                <div>
                                     <img src="./images/FSWDPythonHindi.jpg" alt="Navin Reddy" class="w-full" />
-                                    <p class="text-xl font-semibold  line-clamp-2">
+                                    <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">
                                         Full Stack Web Development using Python in Hindi
                                     </p>
                                 </div>
@@ -1146,7 +1044,7 @@
                                         <p class="text-lg font-semibold ">
                                             <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>4000.00</span>
                                         </p>
-                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-inBlue-500  border-inBlue-600">
+                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-[#a2cafa]  border-blue-600">
                                             Live
                                         </p>
                                     </div>
@@ -1158,7 +1056,7 @@
                                 class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
                                 <div>
                                     <img src="./images/BigDataBootcamp.jpg" alt="Shashank Mishra" class="w-full" />
-                                    <p class="text-xl font-semibold  line-clamp-2">
+                                    <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">
                                         Job Guaranteed Big Data Bootcamp
                                     </p>
                                 </div>
@@ -1170,37 +1068,132 @@
                                         <p class="text-lg font-semibold ">
                                             <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>17700.00</span>
                                         </p>
-                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-inBlue-500  border-inBlue-600">
+                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-[#a2cafa]  border-blue-600">
                                             Live
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                    
+                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
+                            <div
+                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
+                                <div>
+                                    <img src="./images/DSAforFAANG.jpg" alt="Anurag Tiwari" class="w-full" />
+                                    <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">
+                                        DSA for FAANG preparation with Python and JavaScript
+                                    </p>
+                                </div>
+                                <div class="w-full">
+                                    <p class="text-base text-left">
+                                        Anurag Tiwari
+                                    </p>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p class="text-lg font-semibold ">
+                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>4000.00</span>
+                                        </p>
+                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-[#a2cafa]  border-blue-600">
+                                            Live
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
+                            <div
+                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
+                                <div>
+                                    <img src="./images/youtubemasteryb2.jpg" alt="Amresh Bharti" class="w-full" />
+                                    <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">
+                                        YouTube Mastery Batch 2 in Hindi
+                                    </p>
+                                </div>
+                                <div class="w-full">
+                                    <p class="-500 text-base text-left">
+                                        Amresh Bharti
+                                    </p>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p class="text-lg font-semibold ">
+                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>7000.00</span>
+                                        </p>
+                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-[#a2cafa]  border-blue-600">
+                                            Live
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
+                            <div
+                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
+                                <div>
+                                    <img src="./images/DigitalMarketing.jpg" alt="Amresh Bharti" class="w-full" />
+                                    <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">
+                                        Digital Marketing Batch 2 in Hindi
+                                    </p>
+                                </div>
+                                <div class="w-full">
+                                    <p class="text-base text-left">
+                                        Amresh Bharti
+                                    </p>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p class="text-lg font-semibold ">
+                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>11000.00</span>
+                                        </p>
+                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-[#a2cafa]  border-blue-600">
+                                            Live
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px">
+                            <div
+                                class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2 px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
+                                <div>
+                                    <img src="./images/AdvanceFacebookMarketing.jpg" alt="Amresh Bharti" class="w-full" />
+                                    <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">
+                                        Advance Facebook Marketing Course in Hindi
+                                    </p>
+                                </div>
+                                <div class="w-full">
+                                    <p class="text-base text-left">
+                                        Amresh Bharti
+                                    </p>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p class="text-lg font-semibold ">
+                                            <span style="font-family: Poppins"><span style="font-family: Manrope">₹</span>3000.00</span>
+                                        </p>
+                                        <p class="text-sm border px-2 py-0.5 rounded-[4px] bg-[#a2cafa]  border-blue-600">
+                                            Live
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>                    
                     </ul>
                     <div class="swiper-button-next swiper-button-next-liveCourses"></div>
                     <div class="swiper-button-prev swiper-button-prev-liveCourses"></div>
                   </div>
                 </div>
-                <div class="text-center -mt-20 relative z-50">
-                  <button class="font-semibold ">
+                <div class="text-center  relative ">
+                  <a href="https://ineuron.ai/courses" target="_blank" class="font-semibold text-lg hover:-translate-y-2 hover:scale-110">
                     View More
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
           </section>
 
         <section class="affordable-programs" style="display: none;">
-            <div class="container mx-auto max-w-7xl text-inGrey-50 pt-12 pb-20">
+            <div class="container mx-auto max-w-7xl  pt-12 pb-20">
                 <div class="flex flex-col items-center justify-center">
                     <p class="text-2xl lg:text-3xl font-semibold ">Affordable Programs</p>
                     <p class="text-base lg:text-lg py-0 px-2 text-center ">Find your favourite
                         courses in pocket-friendly ways.</p>
                 </div>
                 <div class="flex flex-col items-center max-w-md md:max-w-7xl lg:max-w-7xl mx-auto">
-                    <div class="container mx-auto pb-20 relative">
+                    <div class="container mx-auto pb-5 relative">
                         <div class="swiper mySwiper affordableCoursesSwiper" dir="ltr">
                             <ul class="swiper-wrapper ">
                                 <li
@@ -1211,7 +1204,7 @@
                                         <div><img
                                                 src="./images/masteringdsawithpython.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Mastering
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Mastering
                                                 DSA with Python</p>
                                         </div>
                                         <div class="w-full">
@@ -1228,7 +1221,7 @@
                                         <div><img
                                                 src="./images/masteringdsawithjava.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Mastering
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Mastering
                                                 DSA with Java</p>
                                         </div>
                                         <div class="w-full">
@@ -1246,7 +1239,7 @@
                                         <div><img
                                                 src="./images/masteringdsawithcpp.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Mastering
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Mastering
                                                 DSA with C++</p>
                                         </div>
                                         <div class="w-full">
@@ -1264,7 +1257,7 @@
                                         <div><img
                                                 src="./images/androidPwithML.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Android P
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Android P
                                                 with Machine Learning Apps</p>
                                         </div>
                                         <div class="w-full">
@@ -1282,7 +1275,7 @@
                                         <div><img
                                                 src="./images/FSDjangodeveloper.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Full Stack
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Full Stack
                                                 Django Developer</p>
                                         </div>
                                         <div class="w-full">
@@ -1300,7 +1293,7 @@
                                         <div><img
                                                 src="./images/FSdjangowithreact.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Full Stack
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Full Stack
                                                 Django with React</p>
                                         </div>
                                         <div class="w-full">
@@ -1316,21 +1309,21 @@
                             <div class="swiper-button-prev swiper-button-prev-affordableCourses"></div>
                         </div>
                     </div>
-                    <div class="text-center -mt-20 relative z-50"><button
-                            class="font-semibold ">View More</button></div>
+                    <div class="text-center  relative ">
+                    <a href="https://ineuron.ai/courses" target="_blank" class="font-semibold text-lg hover:-translate-y-2 hover:scale-110">View More</a></div>
                 </div>
             </div>
         </section>
 
         <section class="community-programs" style="display: none;">
-            <div class="container mx-auto max-w-7xl text-inGrey-50 pt-12 pb-20">
+            <div class="container mx-auto max-w-7xl  pt-12 pb-20">
                 <div class="flex flex-col items-center justify-center">
                     <p class="text-2xl lg:text-3xl font-semibold ">Community Programs</p>
                     <p class="text-base lg:text-lg py-0 px-2 text-center ">Open to all pro-live
                         classes on Youtube for free.</p>
                 </div>
                 <div class="flex flex-col items-center max-w-md md:max-w-7xl lg:max-w-7xl mx-auto">
-                    <div class="container mx-auto pb-20 relative">
+                    <div class="container mx-auto pb-5 relative">
                         <div class="swiper mySwiper communitycourses-swiper">
                             <ul class="swiper-wrapper ">
                                 <li   class="swiper-slide  "
@@ -1340,7 +1333,7 @@
                                         <div><img
                                                 src="./images/emmet.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Write
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Write
                                                 quicker HTML5 and CSS 3; productivity hacks with emmet4</p>
                                         </div>
                                         <div class="w-full">
@@ -1356,7 +1349,7 @@
                                         <div><img
                                                 src="./images/customcocoapads.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Publishing
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Publishing
                                                 Custom Cocoapads</p>
                                         </div>
                                         <div class="w-full">
@@ -1372,7 +1365,7 @@
                                         <div><img
                                                 src="./images/ecommercewithreactjs.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2 ">Build an
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4 ">Build an
                                                 Ecommerce with ReactJS</p>
                                         </div>
                                         <div class="w-full">
@@ -1388,7 +1381,7 @@
                                         <div><img
                                                 src="./images/ReactJSCrashCourse.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">ReactJS
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">ReactJS
                                                 Crash Course</p>
                                         </div>
                                         <div class="w-full">
@@ -1404,7 +1397,7 @@
                                         <div><img
                                                 src="./images/AngularCrashCourse.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold line-clamp-2">Angular
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Angular
                                                 Crash Course</p>
                                         </div>
                                         <div class="w-full">
@@ -1420,7 +1413,7 @@
                                         <div><img
                                                 src="./images/PythonCrashCourse.jpg"
                                                 alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Python
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Python
                                                 Crash Course by Hitesh</p>
                                         </div>
                                         <div class="w-full">
@@ -1430,221 +1423,26 @@
                                     </div>
                                 </li>
 
-                                <!-- <li   class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d1acb95af3c72503429884.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Write
-                                                quicker HTML5 and CSS 3; productivity hacks with emmet4</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li   class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d1a08d5af3c74c7a4294a6.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Publishing
-                                                Custom Cocoapads</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li   class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d19eca5af3c72ff2429437.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Build an
-                                                Ecommerce with ReactJS</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li  
-                                    class="swiper-slide swiper-slide--active "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d18e235af3c732c0429307.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">ReactJS
-                                                Crash Course</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="10" 
-                                    class="swiper-slide swiper-slide--active "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d18cd45af3c7b9924292ef.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Angular
-                                                Crash Course</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="11" 
-                                    class="swiper-slide swiper-slide--active "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d189615af3c71c4c4292d7.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Python
-                                                Crash Course by Hitesh</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="12"  class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d1acb95af3c72503429884.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Write
-                                                quicker HTML5 and CSS 3; productivity hacks with emmet4</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="13"  class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d1a08d5af3c74c7a4294a6.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Publishing
-                                                Custom Cocoapads</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="14"  class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d19eca5af3c72ff2429437.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Build an
-                                                Ecommerce with ReactJS</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="15"  class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d18e235af3c732c0429307.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">ReactJS
-                                                Crash Course</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="16"  class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d18cd45af3c7b9924292ef.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Angular
-                                                Crash Course</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-index="17"  class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
-                                    <div
-                                        class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between gap-x-6 gap-y-2  px-6 py-8 w-80 lg:w-96 h-[26rem] lg:h-[26rem] ml-[2.5rem] sm:ml-[4rem] md:ml-[2rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
-                                        <div><img
-                                                src="https://cdn.ineuron.ai/assets/uploads/thumbnails/62d189615af3c71c4c4292d7.jpg"
-                                                alt="Hitesh Choudhary" class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2">Python
-                                                Crash Course by Hitesh</p>
-                                        </div>
-                                        <div class="w-full">
-                                            <p class="text-base text-left">Hitesh Choudhary</p>
-                                            <p class="text-lg font-semibold">FREE</p>
-                                        </div>
-                                    </div>
-                                </li> -->
                             </ul>
                             <div class="swiper-button-next swiper-button-next-communityCourses"></div>
                             <div class="swiper-button-prev swiper-button-prev-communityCourses"></div>
                         </div>
                     </div>
-                    <div class="text-center -mt-20 relative z-50"><button
-                            class="font-semibold ">View More</button></div>
+                    <div class="text-center  relative "><a href="https://ineuron.ai/courses" target="_blank"
+                            class="font-semibold text-lg hover:-translate-y-2 hover:scale-110">View More</a></div>
                 </div>
             </div>
         </section>
 
         <section class="one-neuron-programs" style="display: none;">
-            <div class="container mx-auto max-w-7xl text-inGrey-50 pt-12 pb-20">
+            <div class="container mx-auto max-w-7xl  pt-12 pb-20">
                 <div class="flex flex-col items-center justify-center">
                     <p class="text-2xl lg:text-3xl font-semibold ">One Neuron</p>
-                    <p class="text-base lg:text-lg py-0 px-2 text-center text-inGray-300">New Neurons all day,
+                    <p class="text-base lg:text-lg py-0 px-2 text-center ">New Neurons all day,
                         every day.</p>
                 </div>
                 <div class="flex flex-col items-center max-w-md md:max-w-7xl lg:max-w-7xl mx-auto">
-                    <div class="container mx-auto pb-20 relative">
+                    <div class="container mx-auto pb-5 relative">
                         <div class="flex flex-row" dir="ltr">
                             <ul class="flex flex-row">
                                 <!-- style="transition: none 0s ease 0s; overflow: unset; transform: translate3d(0px, 0px, 0px);"> -->
@@ -1654,7 +1452,7 @@
                                         class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between bg-inBlack-300 px-6 py-8 w-80 lg:w-96 h-[27rem] ml-[2.0rem] sm:ml-[4rem] md:ml-[2.5rem] lg:ml-[15rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
                                         <div><img src="./images/techneurontumb.webp"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2 mt-4">Tech
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4 mt-4">Tech
                                                 Neuron</p>
                                             <p class="text-left text-sm line-clamp-4 mt-3">200+ courses, 500+ projects,
                                                 raise your demand option, consistent services from iNeuron, work 1:1 with
@@ -1673,7 +1471,7 @@
                                         class=" hover:shadow-inner bg-[#f9fafb] hover:-translate-y-2 flex flex-col items-start justify-between bg-inBlack-300 px-6 py-8 w-80 lg:w-96 h-[27rem] ml-[2.0rem] sm:ml-[4rem] md:ml-[2.5rem] lg:ml-[15rem] my-12 rounded-xl fade-in-image shadow-[0px_0px_20px_rgba(171,171,171,0.25)] cursor-pointer">
                                         <div><img src="./images/kidsneuron.webp"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold  line-clamp-2 mt-4">Kids
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4 mt-4">Kids
                                                 Neuron</p>
                                             <p class="text-left text-sm  overflow-hidden mt-4" style="height: 60px;">Lifetime access, Raise your
                                                 demand option, Live Classes for all Tech Courses, Consistent services from
@@ -1691,21 +1489,21 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="text-center -mt-20 relative z-50"><button
-                            class="font-semibold text-inGray-300">View More</button></div>
+                    <div class="text-center relative "><a href="https://ineuron.ai/courses" target="_blank"
+                            class="font-semibold  text-lg hover:-translate-y-2 hover:scale-110">View More</a></div>
                 </div>
             </div>
         </section>
 
         <section class="test-series-programs" style="display: none;">
-            <div class="container mx-auto max-w-7xl text-inGrey-50 pt-12 pb-20">
+            <div class="container mx-auto max-w-7xl  pt-12 pb-20">
                 <div class="flex flex-col items-center justify-center">
-                    <p class="text-2xl lg:text-3xl font-semibold text-inBlue-800">Test Series</p>
-                    <p class="text-base lg:text-lg py-0 px-2 text-center text-inGray-300">Quiz-based courses
+                    <p class="text-2xl lg:text-3xl font-semibold ">Test Series</p>
+                    <p class="text-base lg:text-lg py-0 px-2 text-center ">Quiz-based courses
                         to prepare you for interviews.</p>
                 </div>
                 <div class="flex flex-col items-center max-w-md md:max-w-7xl lg:max-w-7xl mx-auto">
-                    <div class="container mx-auto pb-20 relative">
+                    <div class="container mx-auto pb-5 relative">
                         <div class="swiper mySwiper testSeries-swiper" dir="ltr">
                             <ul class="swiper-wrapper">
                                 <!-- style="transition: transform 400ms ease-in-out 0s; overflow: unset; transform: translate3d(-3416px, 0px, 0px);"> -->
@@ -1716,7 +1514,7 @@
                                         <div><img
                                                 src="./images/AndroidTechnicalInterview.jpg"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold text-inBlue-800 line-clamp-2">Android
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Android
                                                 Technical Interview Preparation</p>
                                         </div>
                                         <div class="w-full">
@@ -1733,7 +1531,7 @@
                                         <div><img
                                                 src="./images/CCodingInterview.jpg"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold text-inBlue-800 line-clamp-2">C Coding
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">C Coding
                                                 Interview Preparation</p>
                                         </div>
                                         <div class="w-full">
@@ -1750,7 +1548,7 @@
                                         <div><img
                                                 src="./images/CppCodingInterview.jpg"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold text-inBlue-800 line-clamp-2">C++ Coding
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">C++ Coding
                                                 Interview Preparation</p>
                                         </div>
                                         <div class="w-full">
@@ -1767,7 +1565,7 @@
                                         <div><img
                                                 src="./images/DSAInterview.jpg"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold text-inBlue-800 line-clamp-2">Data
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Data
                                                 Structure and Algorithm Interview Preparation</p>
                                         </div>
                                         <div class="w-full">
@@ -1784,7 +1582,7 @@
                                         <div><img
                                                 src="./images/HTMLCSSInterview.jpg"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold text-inBlue-800 line-clamp-2">HTML CSS
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">HTML CSS
                                                 Coding Interview Preparation</p>
                                         </div>
                                         <div class="w-full">
@@ -1801,7 +1599,7 @@
                                         <div><img
                                                 src="./images/JavaInterview.jpg"
                                                 class="w-full">
-                                            <p class="text-xl font-semibold text-inBlue-800 line-clamp-2">Java
+                                            <p class="text-xl font-semibold line-clamp-2 text-[#233c7b] pt-4">Java
                                                 Coding Interview Preparation</p>
                                         </div>
                                         <div class="w-full">
@@ -1818,81 +1616,107 @@
                             <div class="swiper-button-prev swiper-button-prev-testSeries"></div>
                         </div>
                     </div>
-                    <div class="text-center -mt-20 relative z-50"><button
-                            class="font-semibold text-inGray-300">View More</button></div>
+                    <div class="text-center  relative "><a href="https://ineuron.ai/courses" target="_blank"
+                            class="font-semibold text-lg hover:-translate-y-2 hover:scale-110">View More</a></div>
                 </div>
+            </div>
+        </section>
+
+        <section class="hackathon-comp bg-[#cdcdcd] pb-24">
+            <div class="  container mx-auto pt-20">
+              <h2 class="heading text-center text-5xl font-bold text-[#233c7b] pb-9">Hackathon Companies</h2>
+
+                <div class="swiper mySwiper hackathon-companies" >
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/nvidia.png" alt="nvidia" />    </div></li>                
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/redis.png" alt="redis" />      </div></li>              
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/github.png" alt="github" />    </div></li>                
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/jetbrains.png" alt="jetbrains"/> </div></li>                    
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/geekyants.png" alt="geekyants"/> </div></li>                    
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/musigma.png" alt="musigma" />  </div></li>                  
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/learnyst.png" alt="learnyst" /></div></li>
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/nvidia.png" alt="nvidia" />    </div></li>                
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/redis.png" alt="redis" />      </div></li>              
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/github.png" alt="github" />    </div></li>                
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/jetbrains.png" alt="jetbrains"/> </div></li>                   
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/geekyants.png" alt="geekyants"/> </div></li>                    
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/musigma.png" alt="musigma" />  </div></li>                  
+                        <li class="swiper-slide"><div class="mt-20"><img class=" lg:w-48" src="./images/learnyst.png" alt="learnyst" /></div></li>
+                    </ul>
+                </div>       
             </div>
         </section>
 
 
         <section class="our-products">
-            <div class="container mx-auto py-20 max-w-7xl text-inGrey-50">
+            <div class="container mx-auto py-20 max-w-7xl ">
                 <h2 class="heading text-center text-5xl font-bold text-[#233c7b] pb-20">Our Products</h2>
                 <div class="flex gap-20 items-center justify-center flex-wrap">
-                    <div>
+                    <div class="mt-10">
                         <a href="https://jobs.ineuron.ai/" rel="noopener noreferrer" target="_blank"
                             class="flex flex-col gap-4 items-center justify-center w-80 h-80">
                             <img src="./images/jobsearch.svg" alt="Job Portal"
                                 class="w-50 h-40" />
-                            <h4 class="text-center text-xl lg:text-2xl text-inBlue-800 font-semibold">
+                            <h4 class="text-center text-xl lg:text-2xl  font-semibold text-[#233c7b] pt-8 pb-4">
                                 Job Portal
                             </h4>
-                            <p class="text-center text-sm sm:text-base lg:text-lg text-inGray-200">
+                            <p class="text-center text-sm sm:text-base lg:text-xl text-[#454545]">
                                 Use exceptional templates for a stand-out resume minus the
                                 sign up process.
                             </p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mt-16">
                         <a href="https://internship.ineuron.ai/" rel="noopener noreferrer" target="_blank"
                             class="flex flex-col gap-4 items-center justify-center w-80 h-80">
                             <img src="./images/internshipPortal.svg" alt="Internship portal"
                                 class="w-50 h-40" />
-                            <h4 class="text-center text-xl lg:text-2xl text-inBlue-800 font-semibold">
+                            <h4 class="text-center text-xl lg:text-2xl text-[#233c7b] font-semibold pt-8 pb-4">
                                 Internship portal
                             </h4>
-                            <p class="text-center text-sm sm:text-base lg:text-lg text-inGray-200">
+                            <p class="text-center text-sm sm:text-base lg:text-xl text-[#454545]">
                                 iNeuron's self-paced internship portal prioritises hands-on
                                 training with 570+ internship projects.
                             </p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mt-16">
                         <a href="https://affiliate.ineuron.ai/" rel="noopener noreferrer" target="_blank"
                             class="flex flex-col gap-4 items-center justify-center w-80 h-80">
                             <img src="./images/becomeAffiliate.svg" alt="Become an affiliate"
                                 class="w-50 h-40" />
-                            <h4 class="text-center text-xl lg:text-2xl text-inblue-800 font-semibold">
+                            <h4 class="text-center text-xl lg:text-2xl text-[#233c7b] font-semibold pt-8 pb-4">
                                 Become an affiliate
                             </h4>
-                            <p class="text-center text-sm sm:text-base lg:text-lg text-inGray-200">
+                            <p class="text-center text-sm sm:text-base lg:text-xl text-[#454545]">
                                 Explore affiliate marketing opportunities with iNeuron and
                                 attain financial frredom.
                             </p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mt-16">
                         <a href="https://halloffame.ineuron.ai/" rel="noopener noreferrer" target="_blank"
                             class="flex flex-col gap-4 items-center justify-center w-80 h-80">
                             <img src="./images/badge.svg" alt="Hall of fame"
                                 class="w-50 h-40" />
-                            <h4 class="text-center text-xl lg:text-2xl text-inBlue-800 font-semibold">
+                            <h4 class="text-center text-xl lg:text-2xl text-[#233c7b] font-semibold pt-8 pb-4">
                                 Hall of fame
                             </h4>
-                            <p class="text-center text-sm sm:text-base lg:text-lg text-inGray-200">
+                            <p class="text-center text-sm sm:text-base lg:text-xl text-[#454545]">
                                 Our student placements and 10+ career transitions speak
                                 volumes about our courses.
                             </p>
                         </a>
                     </div>
-                    <div>
+                    <div class="mt-8">
                         <a href="https://blog.ineuron.ai/" rel="noopener noreferrer" target="_blank"
                             class="flex flex-col gap-4 items-center justify-center w-80 h-80">
-                            <img src="./images/blog.svg" alt="InBlog" class="w-50 h-40" />
-                            <h4 class="text-center text-xl lg:text-2xl text-inBlue-800 font-semibold">
+                                <img src="./images/blog.svg" alt="InBlog" class="w-50 h-40" />
+                            
+                            <h4 class="text-center text-xl lg:text-2xl text-[#233c7b] font-semibold pt-8 pb-4">
                                 InBlog
                             </h4>
-                            <p class="text-center text-sm sm:text-base lg:text-lg text-inGray-200">
+                            <p class="text-center text-sm sm:text-base lg:text-xl text-[#454545]">
                                 Explore all you want about your favourite courses.
                             </p>
                         </a>
@@ -1903,498 +1727,385 @@
 
 
         <section class="tech-avengers">
-            <div class="container mx-auto max-w-7xl text-inGrey-50 py-20">
+            <div class="container mx-auto max-w-7xl  py-20">
                 <h2 class="heading text-center text-5xl font-bold text-[#233c7b] pb-20">Tech Avengers</h2>
                 <div class="flex items-center justify-center max-w-7xl mx-auto">
                     <div class="container mx-auto pb-20 relative">
                         <div class="swiper mySwiper avengers">
                             <ul class="avengerrs swiper-wrapper">
-                                <!-- style="transition: transform 400ms ease-in-out 0s; overflow: unset; transform: translate3d(-2989px, 0px, 0px);"> -->
-                                <li   class="swiper-slide "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide " style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="hover:h-2rem bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/mysirg-square.png" alt="Saurabh Shukla"
+                                        <div class="flex items-centers"><img src="./images/mysirg-square.png" alt="Saurabh Shukla"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Saurabh Shukla</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Senior VP</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/saurabh-shukla-5b73bb6/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/user/saurabhexponent1"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">Senior VP</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/saurabh-shukla-5b73bb6/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/user/saurabhexponent1"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li   class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/saksham-square.png" alt="Saksham Choudhary"
+                                        <div class="flex items-centers"><img src="./images/saksham-square.png" alt="Saksham Choudhary"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Saksham Choudhary</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Cyber Security
+                                        <p class="text-sm lg:text-base text-center ">Cyber Security
                                             Lead</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/saksham-choudhary-6920651a2/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a
-                                                href="https://www.youtube.com/c/SakshamTheComputerGuy" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
-                                                    class="w-8"></a></div>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/saksham-choudhary-6920651a2/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/SakshamTheComputerGuy"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li   class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/Souranghsu-Pal.png" alt="Souranghsu Pal"
+                                        <div class="flex items-centers"><img src="./images/Souranghsu-Pal.png" alt="Souranghsu Pal"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Souranghsu Pal</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Mentor</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/sourangshu-pal-0774b212a/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon" class="w-8 "></a>
+                                        <p class="text-sm lg:text-base text-center ">Mentor</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/sourangshu-pal-0774b212a/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li   class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="/./images/sunny-square.png" alt="Sunny Bhaveen Chandra"
+                                        <div class="flex items-centers"><img src="/./images/sunny-square.png" alt="Sunny Bhaveen Chandra"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Sunny Bhaveen Chandra</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Data Scientist
+                                        <p class="text-sm lg:text-base text-center ">Data Scientist
                                         </p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/c17hawke/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a></div>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/c17hawke/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li   class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/Mukesh-Otwani-square.png" alt="Mukesh Otwani"
+                                        <div class="flex items-centers"><img src="./images/Mukesh-Otwani-square.png" alt="Mukesh Otwani"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Mukesh Otwani</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">VP Automation
+                                        <p class="text-sm lg:text-base text-center ">VP Automation
                                         </p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/mukesh-otwani-93631b99"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/mukeshotwani"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/mukesh-otwani-93631b99"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/mukeshotwani" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li   class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/KiranSahu.png" alt="Kiran Sahu"
+                                        <div class="flex items-centers"><img src="./images/KiranSahu.png" alt="Kiran Sahu"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Kiran Sahu</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Mentor</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/kiran-sahu-qa/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a></div>
+                                        <p class="text-sm lg:text-base text-center ">Mentor</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/kiran-sahu-qa/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li   class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/sudhanshu-square.png" alt="Sudhanshu Kumar"
+                                        <div class="flex items-centers"><img src="./images/sudhanshu-square.png" alt="Sudhanshu Kumar"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Sudhanshu Kumar</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">AI Engineer
+                                        <p class="text-sm lg:text-base text-center ">AI Engineer
                                             &amp; CEO</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/-sudhanshu-kumar/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/sudhanshukumarall"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/-sudhanshu-kumar/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/sudhanshukumarall" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li  
-                                    class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide  " style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/hitesh-square.png" alt="Hitesh Choudhary"
+                                        <div class="flex items-centers"><img src="./images/hitesh-square.png" alt="Hitesh Choudhary"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Hitesh Choudhary</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">CTO</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/hiteshchoudhary/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a
-                                                href="https://www.youtube.com/c/HiteshChoudharydotcom" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
-                                                    class="w-8"></a></div>
+                                        <p class="text-sm lg:text-base text-center ">CTO</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/hiteshchoudhary/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/HiteshChoudharydotcom"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li  
-                                    class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide  " style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/krish-square.png" alt="Krish Naik"
+                                        <div class="flex items-centers"><img src="./images/krish-square.png" alt="Krish Naik"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Krish Naik</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">CIO</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/naikkrish/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/user/krishnaik06"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">CIO</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/naikkrish/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/user/krishnaik06" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li  
-                                    class="swiper-slide  "
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide  " style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/telusko-square.png" alt="Navin Reddy"
+                                        <div class="flex items-centers"><img src="./images/telusko-square.png" alt="Navin Reddy"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Navin Reddy</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Senior VP</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/navinreddy20/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/Telusko"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">Senior VP</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/navinreddy20/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/Telusko" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="10"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/amresh-square.png" alt="Amresh Bharti"
+                                        <div class="flex items-centers"><img src="./images/amresh-square.png" alt="Amresh Bharti"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Amresh Bharti</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">VP Marketing</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/amresh-bharti-571122166/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/MahatmajiTechnical"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">VP Marketing</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/amresh-bharti-571122166/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/MahatmajiTechnical"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-
-                                <li data-index="11"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                            
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/mysirg-square.png" alt="Saurabh Shukla"
+                                        <div class="flex items-centers"><img src="./images/mysirg-square.png" alt="Saurabh Shukla"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Saurabh Shukla</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Senior VP</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/saurabh-shukla-5b73bb6/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/user/saurabhexponent1"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">Senior VP</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/saurabh-shukla-5b73bb6/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/user/saurabhexponent1"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="12"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/saksham-square.png" alt="Saksham Choudhary"
+                                        <div class="flex items-centers"><img src="./images/saksham-square.png" alt="Saksham Choudhary"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Saksham Choudhary</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Cyber Security
+                                        <p class="text-sm lg:text-base text-center ">Cyber Security
                                             Lead</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/saksham-choudhary-6920651a2/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a
-                                                href="https://www.youtube.com/c/SakshamTheComputerGuy" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
-                                                    class="w-8"></a></div>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/saksham-choudhary-6920651a2/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/SakshamTheComputerGuy"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li data-index="13"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/Souranghsu-Pal.png" alt="Souranghsu Pal"
+                                        <div class="flex items-centers"><img src="./images/Souranghsu-Pal.png" alt="Souranghsu Pal"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Souranghsu Pal</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Mentor</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/sourangshu-pal-0774b212a/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon" class="w-8 "></a>
+                                        <p class="text-sm lg:text-base text-center ">Mentor</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/sourangshu-pal-0774b212a/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="14"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="/./images/sunny-square.png" alt="Sunny Bhaveen Chandra"
+                                        <div class="flex items-centers"><img src="/./images/sunny-square.png" alt="Sunny Bhaveen Chandra"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Sunny Bhaveen Chandra</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Data Scientist
+                                        <p class="text-sm lg:text-base text-center ">Data Scientist
                                         </p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/c17hawke/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a></div>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/c17hawke/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li data-index="15"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/Mukesh-Otwani-square.png" alt="Mukesh Otwani"
+                                        <div class="flex items-centers"><img src="./images/Mukesh-Otwani-square.png" alt="Mukesh Otwani"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Mukesh Otwani</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">VP Automation
+                                        <p class="text-sm lg:text-base text-center ">VP Automation
                                         </p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/mukesh-otwani-93631b99"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/mukeshotwani"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/mukesh-otwani-93631b99"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/mukeshotwani" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="16"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/KiranSahu.png" alt="Kiran Sahu"
+                                        <div class="flex items-centers"><img src="./images/KiranSahu.png" alt="Kiran Sahu"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Kiran Sahu</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Mentor</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/kiran-sahu-qa/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a></div>
+                                        <p class="text-sm lg:text-base text-center ">Mentor</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/kiran-sahu-qa/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li data-index="17"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/sudhanshu-square.png" alt="Sudhanshu Kumar"
+                                        <div class="flex items-centers"><img src="./images/sudhanshu-square.png" alt="Sudhanshu Kumar"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Sudhanshu Kumar</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">AI Engineer
+                                        <p class="text-sm lg:text-base text-center ">AI Engineer
                                             &amp; CEO</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/-sudhanshu-kumar/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/sudhanshukumarall"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/-sudhanshu-kumar/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/sudhanshukumarall" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="18"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/hitesh-square.png" alt="Hitesh Choudhary"
+                                        <div class="flex items-centers"><img src="./images/hitesh-square.png" alt="Hitesh Choudhary"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Hitesh Choudhary</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">CTO</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/hiteshchoudhary/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a
-                                                href="https://www.youtube.com/c/HiteshChoudharydotcom" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
-                                                    class="w-8"></a></div>
+                                        <p class="text-sm lg:text-base text-center ">CTO</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/hiteshchoudhary/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/HiteshChoudharydotcom"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a></div>
                                     </div>
                                 </li>
-                                <li data-index="19"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers "><img
-                                                src="./images/krish-square.png" alt="Krish Naik"
+                                        <div class="flex items-centers "><img src="./images/krish-square.png" alt="Krish Naik"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Krish Naik</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">CIO</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/naikkrish/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/user/krishnaik06"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">CIO</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/naikkrish/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/user/krishnaik06" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="20"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/telusko-square.png" alt="Navin Reddy"
+                                        <div class="flex items-centers"><img src="./images/telusko-square.png" alt="Navin Reddy"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Navin Reddy</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">Senior VP</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/navinreddy20/" rel="noopener noreferrer"
-                                                target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/Telusko"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">Senior VP</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/navinreddy20/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/Telusko" rel="noopener noreferrer"
+                                                target="_blank"><img src="./images/you-tube-icon.svg" alt="icon" class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
-                                <li data-index="21"  class="swiper-slide"
-                                    style="flex: 1 1 auto; position: relative; width: 427px;">
+                                <li class="swiper-slide" style="flex: 1 1 auto; position: relative; width: 427px;">
                                     <div
                                         class="bg-white flex flex-col items-center gap-y-4 justify-center my-8 rounded-lg w-72 md:w-80 lg:w-[22rem] h-[29rem] mx-auto lg:ml-[2rem] my-12 transform-all shadow-[0px_0px_20px_rgba(171,171,171,0.25)]">
-                                        <div class="flex items-centers"><img
-                                                src="./images/amresh-square.png" alt="Amresh Bharti"
+                                        <div class="flex items-centers"><img src="./images/amresh-square.png" alt="Amresh Bharti"
                                                 class="w-52 h-52 mt-1 rounded-full bg-inGray-100"></div>
                                         <div>
-                                            <p
-                                                class="font-semibold text-xl lg:text-2xl text-center flex-wrap text-inBlack-500">
+                                            <p class="font-semibold text-xl lg:text-2xl text-center flex-wrap ">
                                                 Amresh Bharti</p>
                                         </div>
-                                        <p class="text-sm lg:text-base text-center text-inGray-300">VP Marketing</p>
-                                        <div class="flex items-center gap-x-2"><a
-                                                href="https://www.linkedin.com/in/amresh-bharti-571122166/"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/linkedin-icon.svg" alt="icon"
-                                                    class="w-8 "></a><a href="https://www.youtube.com/c/MahatmajiTechnical"
-                                                rel="noopener noreferrer" target="_blank"><img
-                                                    src="./images/you-tube-icon.svg" alt="icon" class="w-8"></a>
+                                        <p class="text-sm lg:text-base text-center ">VP Marketing</p>
+                                        <div class="flex items-center gap-x-2"><a href="https://www.linkedin.com/in/amresh-bharti-571122166/"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/linkedin-icon.svg" alt="icon"
+                                                    class="w-8  hover:-translate-y-2 hover:scale-110"></a><a href="https://www.youtube.com/c/MahatmajiTechnical"
+                                                rel="noopener noreferrer" target="_blank"><img src="./images/you-tube-icon.svg" alt="icon"
+                                                    class="w-8 hover:-translate-y-2 hover:scale-110"></a>
                                         </div>
                                     </div>
                                 </li>
@@ -2409,14 +2120,15 @@
 
 
         <section>
-            <div class=" container  mx-auto  max-w-7xl  pt-5  pb-20">
+            <div class=" container  mx-auto  max-w-7xl  pt-5  pb-40">
                 <div class=" flex  flex-col  gap-4  items-centers  justify-content  max-w-5xl  mx-auto">
                     <h2 class="heading text-center text-5xl font-bold text-[#233c7b] pb-20">Our Partnered Institutions</h2>
                     <div class=" flex  gap-6 md:gap-10  lg:gap-12  items-center  justify-center  flex-wrap">
-                        <img src="./images/taxila.svg" alt="taxila" class=" w-40" /><img src="./images/vit.svg" alt="vit"
-                            class=" w-40" /><img src="./images/keit.svg" alt="keit" class=" w-40" /><img src="./images/gim.svg"
-                            alt="gim" class=" w-40" /><img src="./images/malnad-college.svg" alt="malnad-college"
-                            class=" w-40" />
+                        <img src="./images/taxila.svg" alt="taxila" class=" w-40" />
+                        <img src="./images/vit.svg" alt="vit" class=" w-40" />
+                        <img src="./images/keit.svg" alt="keit" class=" w-40" />
+                        <img src="./images/gim.svg" alt="gim" class=" w-40" />
+                        <img src="./images/malnad-college.svg" alt="malnad-college" class=" w-40" />
                     </div>
                 </div>
             </div>

@@ -30,11 +30,47 @@ var swiper1 = new Swiper(".partner-companies", {
   spaceBetween: 10,
   grabCursor: true,
   slidesPerView: 6,
-  loop: true,
   autoplay: {
     delay: 1,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
+  },
+  speed: 9000,
+  freeModeMomentum: false,
+
+  // // effect: "coverflow",
+  // grabCursor: true,
+  // centeredSlides: true,
+  // slidesPerView: 5,
+  // slidesPerGroup: 1,
+  // spaceBetween: 20,
+
+  // loop: true,
+  // // coverflowEffect: {
+  // //   rotate: 50,
+  // //   stretch: 0,
+  // //   depth: 100,
+  // //   modifier: 1,
+  // //   slideShadows: true,
+  // // },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  // },
+});
+
+var swiper1 = new Swiper(".hackathon-companies", {
+  loop: true,
+  freeMode: true,
+  spaceBetween: 10,
+  grabCursor: true,
+  slidesPerView: 5,
+  loop: true,
+  autoplay: {
+    delay: 1,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
   },
   freeMode: true,
   speed: 9000,
@@ -74,6 +110,17 @@ var swiper3 = new Swiper(".halloffame", {
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
+  // breakpoints: {
+  //   1280: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 20,
+  //     centeredSlides: true,
+  //   },
+  //   780: {
+  //     slidesPerView: 1,
+  //     centeredSlides: true,
+  //   },
+  // },
   navigation: {
     nextEl: ".swiper-hof-button-next",
     prevEl: ".swiper-hof-button-prev",

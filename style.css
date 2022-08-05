@@ -96,24 +96,22 @@
     width: 150px;
 }
 
-.partner-companies{
+/* .partner-companies{
     padding: 20px 100px;
-}
+} */
 
-.partner-companies .swiper-wrapper{
+/* .partner-companies .swiper-wrapper{
     height: 44.80px;
     width: 192px;
-}
+} */
+/* .hackathon-companies .swiper-wrapper>.swiper-slide{
+    height: 50px;
+    width: 60px;
+} */
 .avengers{
     padding-left: 90px;
 }
 
-/* .hall-of-fame{
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-} */
 .halloffame{
     padding-top: 20px;
 }
@@ -148,6 +146,7 @@
 
 body{
     background:#f3f9f9;
+    font-family: "Poppins", sans-serif;
 }
 
 .nav-bar{
@@ -256,9 +255,5 @@ body{
 } */
 
 .swiper-button-next,.swiper-button-prev{
-    /* height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: rgb(156, 154, 154); */
-    color: rgb(39, 46, 112);
+    color: rgba(39, 46, 112, 0.692);
 }
